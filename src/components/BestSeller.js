@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import {products} from '../data/products';
+import {iphones} from '../data/products';
 import BestSellerList from './BestSellerList';
 
 export default class BestSeller extends Component {
   state = {
-    productList: products,
+    productList: iphones,
   };
   render () {
     const {productList} = this.state;

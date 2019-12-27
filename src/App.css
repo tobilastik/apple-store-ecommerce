@@ -63,7 +63,7 @@
 
 .slider-content {
   display: inline-block;
-  color: whitesmoke;
+  color: #424247;
   padding: 2rem 1rem;
   position: absolute;
   left: 20px;
@@ -106,19 +106,39 @@
   background-color: #222222;
   color: #ffffff;
   padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  text-align: center;
+}
+.features i {
+  /* background-color: white; */
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+.features-text {
+  margin-top: 20px;
+  background-color: transparent;
+  height: 50px;
+  width: 100%;
+  text-transform: capitalize;
 }
 
 /**Trending*/
 .trending {
-  padding: 2rem 0;
-  width: 70vw;
-  margin: 0 auto;
+  padding: 1rem 0;
+  width: 60vw;
+  margin: 10px;
+  text-align: center;
 }
 
 .trending h4 {
   font-size: 30px;
   font-family: monospace;
   text-align: center;
+  margin-left: 500px;
 }
 
 .trending-button {
@@ -136,9 +156,9 @@
 
 .product-list {
   padding: 2rem 0;
-  width: 70vw;
+  width: 70px;
+  height: fit-content;
   margin: 0 auto;
-  display: grid;
 }
 
 .product {
@@ -155,9 +175,9 @@
   position: relative;
 }
 .img-style {
-  width: 100%;
+  width: 330px;
   display: block;
-  height: 350px;
+  height: 300px;
   border-top-left-radius: 0.8rem;
   border-top-right-radius: 0.8rem;
   background-color: gray;
@@ -209,7 +229,7 @@
 /**Site offer */
 .site-offer {
   min-height: calc(100vh - 300px);
-  background: url('../src/assets/images/product-2.png') center/cover no-repeat;
+  background: url('../src/assets/images/offer.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   /* justify-content: center; */
@@ -297,7 +317,6 @@
 
 .pic-container {
   position: relative;
-
   margin-left: 50px;
 }
 
@@ -307,4 +326,27 @@
   margin-left: 50px;
   background-color: black;
   cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 50px;
+  padding: 10px;
+
+  /* font-size: 30px; */
+}
+.navbar p {
+  font-size: 30px;
+}
+.navbar-link {
+  position: absolute;
+  right: 50px;
+}
+
+.navbar-links {
+  text-decoration: none;
+  margin: 20px;
+  font-size: 20px;
 }

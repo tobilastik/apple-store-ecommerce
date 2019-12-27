@@ -12,11 +12,13 @@ import SiteOffer from './components/SiteOffer';
 import OfferText from './components/OfferText';
 import Newsletter from './components/Newsletter';
 import Brand from './components/Brand';
-import PicShowcase from './components/PicShowcase';
+import Footer from './components/Footer';
+import {Switch, Route} from 'react-router-dom';
+import Shop from './screen/Shop';
 
 function App () {
   return (
-    <div>
+    <React.Fragment>
       <TopAds />
       <Topbar />
       <Navbar />
@@ -46,8 +48,14 @@ function App () {
       <hr />
       <Newsletter />
       <Brand />
-      <PicShowcase />
-    </div>
+
+      <Footer />
+      <Switch>
+        {/* <Route path="/" component={TopAds} /> */}
+        <Route path="/shop" component={Shop} />
+      </Switch>
+
+    </React.Fragment>
   );
 }
 
