@@ -7,7 +7,6 @@ import Slider from './components/Slider';
 import SliderContent from './components/SliderContent';
 import Features from './components/Features';
 import Trending from './components/Trending';
-import BestSeller from './components/BestSeller';
 import SiteOffer from './components/SiteOffer';
 import OfferText from './components/OfferText';
 import Newsletter from './components/Newsletter';
@@ -32,7 +31,6 @@ function App () {
       </Slider>
       <Features />
       <Trending />
-      <BestSeller />
       <SiteOffer>
         <div className="offer-container">
           <OfferText>

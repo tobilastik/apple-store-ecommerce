@@ -8,9 +8,9 @@ export default class Trending extends Component {
     cartItems: [],
   };
 
-  componentWillMount () {
+  async componentWillMount () {
     if (localStorage.getItem ('cartItems')) {
-      this.setState ({
+      await this.setState ({
         cartItems: JSON.parse (localStorage.getItem ('cartItems')),
       });
     }
