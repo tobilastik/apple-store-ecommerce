@@ -134,11 +134,31 @@
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .trending {
+    padding: 1rem 0;
+
+    max-width: 10px;
+    margin: 1px;
+    text-align: center;
+    color: red;
+  }
+
+  .img-style {
+    width: 30px;
+    display: block;
+    height: 300px;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    background-color: gray;
+  }
+}
+
 .trending h4 {
   font-size: 30px;
   font-family: monospace;
   text-align: center;
-  margin-left: 500px;
+  /* margin-left: 500px; */
 }
 
 .trending-button {
@@ -157,7 +177,7 @@
 .product-list {
   padding: 2rem 0;
   width: 70px;
-  height: fit-content;
+  /* height: fit-content; */
   margin: 0 auto;
 }
 

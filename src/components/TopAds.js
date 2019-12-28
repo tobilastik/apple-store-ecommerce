@@ -1,15 +1,16 @@
-import React, {Component} from 'react';
+import React from 'react';
+import {Navbar} from 'react-bootstrap';
 
-export default class TopAds extends Component {
-  render () {
-    return (
-      <div>
-        <p className="top-ads">
+export default function TopAds () {
+  return (
+    <React.Fragment>
+      <Navbar bg="dark" variant="dark">
+        <Navbar.Brand href="#home">
           Enjoy an extra 20% off
-          <span> select sales styles</span>
-          <span className="read-more"> Read More</span>
-        </p>
-      </div>
-    );
-  }
+          select sales products.
+
+        </Navbar.Brand>
+      </Navbar>
+    </React.Fragment>
+  );
 }

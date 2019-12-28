@@ -8,13 +8,14 @@ export default class Trending extends Component {
     cartItems: [],
   };
 
-  async componentWillMount () {
-    if (localStorage.getItem ('cartItems')) {
-      await this.setState ({
-        cartItems: JSON.parse (localStorage.getItem ('cartItems')),
-      });
-    }
-  }
+  // async componentWillMount () {
+  //   if (localStorage.getItem ('cartItems')) {
+  //     await this.setState ({
+  //       cartItems: JSON.parse (localStorage.getItem ('cartItems')),
+  //     });
+  //   }
+  // }
+
   handleAddToCart = (e, product) => {
     this.setState (state => {
       const cartItems = state.cartItems;
@@ -35,9 +36,9 @@ export default class Trending extends Component {
 
   handleRemoveFromCart = (e, item) => {
     this.setState (state => {
-      const cartItems = state.cartItems.filter (elem => elem.id != item.id);
+      const cartItems = state.cartItems.filter (elem => elem.id !== item.id);
       localStorage.setItem ('cartItems', cartItems);
-      return cartItems;
+      return {cartItems};
     });
   };
   render () {
@@ -57,7 +58,7 @@ export default class Trending extends Component {
                 <article className="product">
 
                   <h5>{product.name}</h5>
-                  <h5>{product.price}</h5>
+                  <h5>${product.price}</h5>
 
                   <div
                     onClick={e => this.handleAddToCart (e, product)}
@@ -71,7 +72,10 @@ export default class Trending extends Component {
             );
           })}
         </section>
-        <Cart cartItems={this.state.cartItems} />
+        <Cart
+          cartItems={this.state.cartItems}
+          handleRemoveFromCart={this.handleRemoveFromCart}
+        />
       </div>
     );
   }

@@ -14,26 +14,26 @@ export const products = [
     id: 1,
     img: product1,
     name: 'Apple MacBook Air 13-inch (2019)',
-    price: '$900',
+    price: 900,
   },
 
   {
     id: 2,
     img: product2,
     name: 'Apple MacBook Pro 15" i9 512G',
-    price: '$290',
+    price: 1290,
   },
   {
     id: 3,
     img: product3,
     name: 'Apple 16-inch MacBook Pro',
-    price: '$1090',
+    price: 1090,
   },
   {
     id: 4,
     img: product4,
     name: 'Apple MacBook Pro 13-Inch (2019)',
-    price: '$1299',
+    price: 1299,
   },
 ];
 

@@ -12,9 +12,7 @@ export default function Brand () {
       <img src={Brand1} alt="Brand" />
       <img src={Brand2} alt="Brand" />
       <img src={Brand3} alt="Brand" />
-      <img src={Brand4} alt="Brand" />
       <img src={Brand5} alt="Brand" />
-      <img src={Brand6} alt="Brand" />
     </div>
   );
 }

@@ -16,7 +16,7 @@ export default class Cart extends Component {
                 <li>
                   <b>{item.name}</b>
                   {' '}
-                  <b>x{item.count}</b>
+                  <b>x{item.count} = {item.price * item.count}</b>
                   <button
                     onClick={e => this.props.handleRemoveFromCart (e, item)}
                     className="remove-cartItem"
@@ -26,7 +26,10 @@ export default class Cart extends Component {
                 </li>
               ))}
             </ul>
+            Total : {cartItems.reduce ((a, c) => a + c.price * c.count, 0)}
           </div>}
+        {cartItems ? <button className="checkout">Check Out</button> : null}
+
       </div>
     );
   }
