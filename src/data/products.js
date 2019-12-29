@@ -1,13 +1,6 @@
 import product1 from '../assets/images/macbook-19.jpg';
 import product2 from '../assets/images/macbook-pro.jpg';
 import product3 from '../assets/images/macbook-pro2.jpg';
-import product4 from '../assets/images/macbookpro-19.jpg';
-
-// import iphone1 from '../assets/images/iPhone-X.jpg';
-
-import iphone2 from '../assets/images/iPoneXR.jpeg';
-import iphone3 from '../assets/images/macbook-pro2.jpg';
-import iphone4 from '../assets/images/macbookpro-19.jpg';
 
 export const products = [
   {

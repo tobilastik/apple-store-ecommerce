@@ -8,13 +8,13 @@ export default class Trending extends Component {
     cartItems: [],
   };
 
-  // async componentWillMount () {
-  //   if (localStorage.getItem ('cartItems')) {
-  //     await this.setState ({
-  //       cartItems: JSON.parse (localStorage.getItem ('cartItems')),
-  //     });
-  //   }
-  // }
+  async componentDidMount () {
+    if (localStorage.getItem ('cartItems')) {
+      await this.setState ({
+        cartItems: JSON.parse (localStorage.getItem ('cartItems')),
+      });
+    }
+  }
 
   handleAddToCart = (e, product) => {
     this.setState (state => {
@@ -51,16 +51,16 @@ export default class Trending extends Component {
         <section className="featured-rooms-center">
           {productList.map (product => {
             return (
-              <div>
+              <div key={product.id}>
                 <div className="img-container">
-                  <img src={product.img} className="img-style" />
+                  <img alt="" src={product.img} className="img-style" />
                 </div>
                 <h5>{product.name}</h5>
                 <h5>${product.price}</h5>
 
                 <div
                   onClick={e => this.handleAddToCart (e, product)}
-                  className="btn-primary"
+                  className="cart-btn"
                 >
                   Add to Cart
                 </div>

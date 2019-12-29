@@ -1,5 +1,4 @@
-import React, {Children} from 'react';
-import Slide from '../assets/images/slider.jpg';
+import React from 'react';
 
 export default function Slider({children, slider}) {
   return (

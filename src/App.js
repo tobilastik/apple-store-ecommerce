@@ -1,14 +1,10 @@
 import React from 'react';
 import './App.css';
 import TopAds from './components/TopAds';
-import Navbar from './components/Navbar';
 import Slider from './components/Slider';
 import SliderContent from './components/SliderContent';
 import Features from './components/Features';
 import Trending from './components/Trending';
-import SiteOffer from './components/SiteOffer';
-import OfferText from './components/OfferText';
-import Newsletter from './components/Newsletter';
 import Brand from './components/Brand';
 import Footer from './components/Footer';
 import {Switch, Route} from 'react-router-dom';
