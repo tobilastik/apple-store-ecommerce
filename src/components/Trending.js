@@ -48,26 +48,23 @@ export default class Trending extends Component {
         <h4>
           Trending Products
         </h4>
-        <section className="product-list">
+        <section className="featured-rooms-center">
           {productList.map (product => {
             return (
               <div>
                 <div className="img-container">
                   <img src={product.img} className="img-style" />
                 </div>
-                <article className="product">
+                <h5>{product.name}</h5>
+                <h5>${product.price}</h5>
 
-                  <h5>{product.name}</h5>
-                  <h5>${product.price}</h5>
+                <div
+                  onClick={e => this.handleAddToCart (e, product)}
+                  className="btn-primary"
+                >
+                  Add to Cart
+                </div>
 
-                  <div
-                    onClick={e => this.handleAddToCart (e, product)}
-                    className="btn-primary"
-                  >
-                    Add to Cart
-                  </div>
-
-                </article>
               </div>
             );
           })}
